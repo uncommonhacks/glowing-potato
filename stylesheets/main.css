@@ -1,0 +1,20 @@
+html, body {
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.teaser-box {
+    /*display: box;
+    box-pack: center;
+    box-align: center;*/
+    width: 80%;
+    max-width: 300px;
+
+    background-color: black;
+    color: white;
+    box-shadow: -30px 30px gray;
+    border: 5px solid white;
+    margin: 10px;
+    padding: 10px;
+
+    align-content: center;
+    text-align: center;
