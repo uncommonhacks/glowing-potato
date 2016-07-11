@@ -1,4 +1,5 @@
 html, body {
+    /* TODO: a fun background? */
     background-color: darkgray;
     font-family: Lato, Helveica, Arial, sans-serif;
 }
@@ -7,7 +8,7 @@ html, body {
     box-pack: center;
     box-align: center;*/
     width: 80%;
-    max-width: 300px;
+    max-width: 350px;
 
     background-color: black;
     color: white;
