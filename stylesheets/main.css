@@ -1,31 +1,31 @@
 html, body {
-    /* TODO: a fun background? */
-    background-color: darkgray;
-    font-family: 'Fira Sans', Helveica, Arial, sans-serif;
+  /* TODO: a fun background? */
+  background-color: darkgray;
+  font-family: 'Fira Sans', Helveica, Arial, sans-serif;
 }
 .teaser-box {
-    /*display: box;
-    box-pack: center;
-    box-align: center;*/
-    width: 80%;
-    max-width: 400px;
+  /*display: box;
+  box-pack: center;
+  box-align: center;*/
+  width: 80%;
+  max-width: 400px;
 
-    background-color: black;
-    color: white;
-    box-shadow: -30px 30px gray;
-    border: 3px solid white;
-    margin: 5% auto;
-    padding: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: -30px 30px gray;
+  border: 3px solid white;
+  margin: 5% auto;
+  padding: 20px;
 
-    align-content: center;
-    text-align: center;
+  align-content: center;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 a {
-    color: white;
+  color: white;
 }
