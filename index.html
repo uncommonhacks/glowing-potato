@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
   <!--TODO: favicon-->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
- <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet"> 
-   <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
+  <!--<link rel="icon" type="image/png" href="assets/images/favicon.png">-->
+
+  <!--fonts-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Monofett" rel="stylesheet"> -->
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/chicagoflf" type="text/css"/> 
+  <script src="https://use.fontawesome.com/d37b143e0c.js"></script>
+
+    <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
 
   <!-- Bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -23,53 +28,53 @@
 </head>
 
 <body>
-  <div>
+  <!--menu bar-->
+  <div class="menu-bar">
+    root@uncommon
   </div>
-  <div class="teaser-box draggable" id="teaser-box">
-    <button type="button" class="btn btn-default hider"></button>
-    <h1>uncommon</h1>
-    <br>
-    <p>Uncommon Hacks</p>
-    <p>Winter 2017</p>
-    <p>Chicago, IL</p>
-    <br>
-    <!--TODO: decide what we want to say here, maybe a few sentences about UH-->
-    <p>Sign up below to receive more information</p>
-    
-    
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#000; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-      <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll" class="input-group">
-          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
-          <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
-          <!--<div class="clear">-->
-          <!--</div>-->
-          <span class="input-group-btn">
-            <button type="submit button" class="btn btn-default" id="mc-embedded-subscribe">Subscribe</button>
-            <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
-          </span>
-        </div>
-      </form>
-    </div>
-    <!--End mc_embed_signup-->
+  
+  <!--title-->
+  <div>
+    <h1>uncommon hacks</h1>
+  </div>
 
-    
-    
-    
-    <br>
-    <p><a href="mailto:uncommonhacks17@gmail.com">Contact</a> | <a href="mailto:uncommonhacks17@gmail.com">Sponsorship</a></p>
-    <p><a href="http://2016.uncommonhacks.com">2016</a>
+  <!--intro window-->
+  <div class="window">
+    <div class="toolbar">
+      <input type="submit" class="hider" value=""/>
+      About Uncommon Hacks
+    </div>
+    <div class="window-content">
+      <p>Winter 2017<br>
+       Chicago, IL</p>
+      <br>
+      <!--TODO: decide what we want to say here, maybe a few sentences about UH-->
+      <p>Sign up below to receive more information</p>
+      
+      <!-- Begin MailChimp Signup Form -->
+      <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
+      <div id="mc_embed_signup">
+        <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll" class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
+            <!--<div class="clear">-->
+            <!--</div>-->
+            <span class="input-group-btn">
+              <button type="submit button" class="btn btn-default" id="mc-embedded-subscribe">Subscribe</button>
+              <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
+            </span>
+          </div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->  
+      <br>
+      <p><a href="mailto:uncommonhacks17@gmail.com">Contact</a> | <a href="mailto:uncommonhacks17@gmail.com">Sponsorship</a>  |  <a href="http://2016.uncommonhacks.com">2016</a></p>
+    </div>
   </div>
 
   <!-- Bootstrap js -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

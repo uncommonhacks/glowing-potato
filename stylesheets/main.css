@@ -1,31 +1,90 @@
 html, body {
-  /* TODO: a fun background? */
-  background-color: darkgray;
-  font-family: 'Fira Sans', Helveica, Arial, sans-serif;
-}
-.teaser-box {
-  /*display: box;
-  box-pack: center;
-  box-align: center;*/
-  width: 80%;
-  max-width: 400px;
-
-  background-color: black;
-  color: white;
-  box-shadow: -30px 30px gray;
-  border: 3px solid white;
-  margin: 5% auto;
-  padding: 20px;
-
-  align-content: center;
-  text-align: center;
+  background-color: darkslategray;
+  /*font is apple's chicago, used in classic mac os*/
+  /*https://en.wikipedia.org/wiki/Chicago_(typeface)*/
+  /*apparently "Krungthep" and "Silom" have same characters, bundled with modern macs */
+  font-family: ChicagoFLF, Krungthep, Silom, monospace;
+  font-size: 10pt;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  /*font-family: 'Monofett', monospace;*/
+  /*font-weight: 400;*/
+  text-align: center;
+  font-size: 40pt;
+  color: white;
 }
 
 a {
-  color: white;
+  color: black;
+}
+
+/* windows */
+
+.window {
+  width: 80%;
+  max-width: 400px;
+
+  background-color: white;
+  color: black;
+  box-shadow: 3px 3px slategray;
+  border: 2px solid gray;
+  margin: 5% auto;
+  border-radius: 5px;
+}
+
+.window-content {
+  padding: 30px;
+}
+
+/* window toolbar */
+
+.toolbar {
+  margin-bottom: 20px;
+  border-bottom: 3px solid gray;
+  padding: 4px;
+  background-color: lightgray;
+  font-size: 9pt;
+  /*text-align: center;*/
+}
+
+.hider {
+  height: 15px;
+  width: 15px;
+  background-color: gray;
+  margin-right: 5px;
+}
+
+/* inputs */
+
+.btn {
+  border-radius: 0;
+  /*border: 2px solid black;*/
+}
+
+.input-group-addon {
+  border-radius: 0px;
+  background-color: white;
+}
+
+.input-group {
+  border: 1px solid black;
+}
+
+.form-control {
+  border-radius: 0;
+  /*border: 1px solid gray;*/
+  /*height: 50px;*/
+}
+
+/*menu bar*/
+
+.menu-bar {
+  height: 20px;
+  color: black;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 10px;
 }
