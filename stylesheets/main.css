@@ -1,5 +1,5 @@
 html, body {
-  background-color: darkslategray;
+  background-color: #1E2542;
   /*font is apple's chicago, used in classic mac os*/
   /*https://en.wikipedia.org/wiki/Chicago_(typeface)*/
   /*apparently "Krungthep" and "Silom" have same characters, bundled with modern macs */
@@ -84,7 +84,7 @@ a {
   color: black;
   width: 100%;
   background-color: white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding-left: 10px;
 }
