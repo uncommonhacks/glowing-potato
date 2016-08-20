@@ -63,7 +63,7 @@
             <!--<div class="clear">-->
             <!--</div>-->
             <span class="input-group-btn">
-              <button type="submit button" class="btn btn-default" id="mc-embedded-subscribe">Subscribe</button>
+              <button type="submit button" class="btn btn-primary" id="mc-embedded-subscribe">Subscribe</button>
               <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
             </span>
           </div>
@@ -75,17 +75,34 @@
     </div>
   </div>
   
-  
-  <!--GAME WINDOW-->
-  <div class="window">
+  <!--LAUNCHER WINDOW-->
+  <div class="window" id="launcher-window">
     <div class="toolbar">
       <input type="submit" class="hider" value=""/>
-      Game: use wasd keys to move and avoid the space aliens, refresh for a new game! Make sure to click on this window to activate the game controls.
+      Home
     </div>
     <div class="window-content">
-    <iframe src="gametest.html" height="100%" width="100%"></iframe>
-
+      <a class="launcher-icon" id="game-launcher">
+        <p><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+        Game</p>
+      </a>
     </div>
+  </div>
+
+
+  <!--GAME WINDOW-->
+  <div class="window" id="game-window">
+    <div class="toolbar">
+      <input type="submit" class="hider" value=""/>
+      Game
+    </div>
+    <div class="window-content">
+      <input type="button" id="start-game" class="btn btn-default" value="Start"/>
+      Controls: <em>wasd</em>
+    </div>
+    <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="100%" width="100%"></iframe>
+
+    
   </div>
 
 

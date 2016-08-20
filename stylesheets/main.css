@@ -40,7 +40,6 @@ a {
 /* window toolbar */
 
 .toolbar {
-  margin-bottom: 20px;
   border-bottom: 3px solid gray;
   padding: 4px;
   background-color: lightgray;
@@ -57,10 +56,18 @@ a {
 
 /* inputs */
 
-.btn {
+.btn-default {
+  border-radius: 0;
+  border: 2px solid black;
+  box-shadow: 2px 2px slategray;
+  margin: 5px;
+}
+
+.btn-primary {
   border-radius: 0;
   background-color: #C1C2C5;
-  /*border: 2px solid black;*/
+  color: black;
+  /*border: 0;*/
 }
 
 .input-group-addon {
@@ -88,4 +95,17 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding-left: 10px;
+}
+
+.launcher-icon {
+  text-align: center;
+  align-content: center;
+}
+
+#game-window {
+  display: none;
+}
+
+#game-iframe {
+  display: none;
 }
