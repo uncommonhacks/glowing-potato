@@ -1,6 +1,10 @@
 $( function() {
   // class window is draggable
-  $(".window").draggable({ handle: ".toolbar" });
+  $(".window").draggable({ 
+    handle: ".toolbar",
+    stack: ".window",
+    // containment: ".page-container"
+   });
 
   // class hider button hides parent div
   $(".hider").click(function(){
