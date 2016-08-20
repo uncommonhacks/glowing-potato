@@ -11,7 +11,7 @@ h1 {
   /*font-family: 'Monofett', monospace;*/
   /*font-weight: 400;*/
   text-align: center;
-  font-size: 40pt;
+  font-size: 24pt;
   color: white;
 }
 
@@ -22,15 +22,18 @@ a {
 /* windows */
 
 .window {
-  width: 80%;
-  max-width: 400px;
+  /*width: 80%;*/
+  /*max-width: 400px;*/
 
   background-color: white;
   color: black;
   box-shadow: 3px 3px slategray;
   border: 2px solid gray;
-  margin: 5% auto;
-  border-radius: 5px;
+  /*margin: 5% auto;*/
+  /*border-radius: 5px;*/
+  padding: 0;
+  margin-bottom: 30px;
+  min-height: 300px;
 }
 
 .window-content {
@@ -100,12 +103,20 @@ a {
 .launcher-icon {
   text-align: center;
   align-content: center;
+  background-color: white;
+  border: 0;
+  margin: 10px;
 }
 
 #game-window {
   display: none;
 }
 
+#video-window {
+  display: none;
+}
+
 #game-iframe {
   display: none;
+  height: 200px;
 }

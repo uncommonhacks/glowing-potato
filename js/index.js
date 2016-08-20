@@ -7,12 +7,8 @@ $( function() {
     $(this).parent('.toolbar').parent('.window').hide()
   }); 
 
-  // LAUNCHER ICONS
-  $("#game-launcher").click(function(){
-    $("#game-window").show();
-  });
 
-  $("#start-game").click(function(){
+  $("#start-game").on('click touch', function(){
     document.getElementById("start-game").value = "Restart";
     var iframe = $("#game-iframe");
     iframe.attr("src", iframe.data("src")); 
@@ -24,7 +20,7 @@ $( function() {
 function hideDiv(divId) {
    $("#"+divId).hide();
 }
-// function startCubeGame() {
-//   hideDiv('teaser-box');
-//   // CUBE GAME GOES HERE
-// }
+
+function showDiv(divId) {
+  $("#"+divId).show();
+}
