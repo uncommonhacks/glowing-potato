@@ -1,10 +1,16 @@
 html, body {
+  /*background-image: url("/img/space.jpg");*/
+  background-size: cover;
   background-color: #1E2542;
   /*font is apple's chicago, used in classic mac os*/
   /*https://en.wikipedia.org/wiki/Chicago_(typeface)*/
   /*apparently "Krungthep" and "Silom" have same characters, bundled with modern macs */
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
+}
+
+.page-container {
+  padding: 2%;
 }
 
 h1 {
@@ -28,7 +34,7 @@ a {
   background-color: white;
   color: black;
   box-shadow: 3px 3px slategray;
-  border: 2px solid gray;
+  border: 2px solid black;
   /*margin: 5% auto;*/
   /*border-radius: 5px;*/
   padding: 0;
@@ -37,17 +43,17 @@ a {
 }
 
 .window-content {
+  border-top: 2px solid black;
   padding: 30px;
 }
 
 /* window toolbar */
 
 .toolbar {
-  border-bottom: 3px solid gray;
   padding: 4px;
   background-color: lightgray;
   font-size: 9pt;
-  /*text-align: center;*/
+  vertical-align: top;
 }
 
 .hider {
@@ -55,6 +61,7 @@ a {
   width: 15px;
   background-color: gray;
   margin-right: 5px;
+  padding: 3px;
 }
 
 /* inputs */
@@ -71,6 +78,17 @@ a {
   background-color: #C1C2C5;
   color: black;
   /*border: 0;*/
+}
+
+.hider {
+  outline: 1px solid black;
+  border: 1px solid white;
+  border-radius: 1px;
+  background-color: gray;
+}
+
+.hider:active {
+  background-color: #586e75;
 }
 
 .input-group-addon {
