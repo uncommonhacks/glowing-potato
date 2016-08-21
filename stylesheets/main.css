@@ -1,10 +1,14 @@
-html, body {
-  /*background-image: url("/img/space.jpg");*/
+html {
+  background: url(../space.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-color: #1E2542;
-  /*font is apple's chicago, used in classic mac os*/
-  /*https://en.wikipedia.org/wiki/Chicago_(typeface)*/
-  /*apparently "Krungthep" and "Silom" have same characters, bundled with modern macs */
+  font-family: ChicagoFLF, Krungthep, Silom, monospace;
+  font-size: 10pt;
+}
+
+body {
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
