@@ -1,14 +1,9 @@
-html {
+html body {
   background: url(../space.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 10pt;
-}
-
-body {
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
@@ -25,10 +20,6 @@ h1 {
   color: white;
 }
 
-a {
-  color: black;
-}
-
 /* windows */
 
 .window {
@@ -43,7 +34,7 @@ a {
   /*border-radius: 5px;*/
   padding: 0;
   margin-bottom: 30px;
-  min-height: 300px;
+  min-height: 280px;
 }
 
 .window-content {
@@ -54,18 +45,24 @@ a {
 /* window toolbar */
 
 .toolbar {
-  padding: 4px;
+  /*padding: 8px;*/
   background-color: lightgray;
   font-size: 9pt;
-  vertical-align: top;
+  /*height: 25px;*/
+  line-height: 25px;
+  text-align: center;
 }
 
 .hider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 1px;
   height: 15px;
   width: 15px;
   background-color: gray;
-  margin-right: 5px;
-  padding: 3px;
+  /*margin: 5px;*/
+  /*padding: 3px;*/
 }
 
 /* inputs */
@@ -130,11 +127,7 @@ a {
   margin: 10px;
 }
 
-#game-window {
-  display: none;
-}
-
-#video-window {
+.hidden {
   display: none;
 }
 
