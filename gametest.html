@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<title>test.js</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+
+		<script src="js/three.min.js"></script>
+		<script src='js/THREEx.KeyboardState.js'></script>
+		<script>
+
+		/******* set the mode *******/
+
+			var scene, camera, renderer, keyboard;
+
+			scene = new THREE.Scene();
+			keyboard = new THREEx.KeyboardState();
+
+			camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 10000 );
+			scene.add(camera);
+			camera.position.z = 10;
+
+			window.addEventListener('resize', function() {
+      			var WIDTH = window.innerWidth,
+          			HEIGHT = window.innerHeight;
+      			renderer.setSize(WIDTH, HEIGHT);
+      			camera.aspect = WIDTH / HEIGHT;
+      			camera.updateProjectionMatrix();
+    		});
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+			renderer.setClearColor(0x808080);
+
+
+			// add n random cubes to the scene, store in an array for later collision testing
+			
+			num_cubes1 = 500;
+			
+				var geometry, material, cube1, tex;
+				var cubes1 = [];
+
+				var dp_textures = [new THREE.TextureLoader().load( "spaceships/blue.png" ), new THREE.TextureLoader().load( "spaceships/green.png" ), new THREE.TextureLoader().load( "spaceships/grey.png" ), new THREE.TextureLoader().load( "spaceships/pink.png" ), new THREE.TextureLoader().load( "spaceships/red.png" ), new THREE.TextureLoader().load( "spaceships/yellow.png" )];
+				
+				for(var i=0; i<num_cubes1; i++){
+					geometry = new THREE.BoxGeometry( 1, 1, 1 );
+					
+					var n = Math.floor(6*Math.random());
+					material = new THREE.MeshLambertMaterial( { map: dp_textures[n]});
+					
+					cube1 = new THREE.Mesh( geometry, material );
+					cube1.position.x = (-28)*Math.random()+14;
+					cube1.position.y = (-20)*Math.random()+10;
+					cube1.position.z = (-50)*Math.random();
+					scene.add( cube1 );
+					cubes1.push(cube1);	
+				}
+				
+
+
+			num_cubes2 = 750;
+			
+				var cubes2 = [];
+				for(var i=0; i<num_cubes2; i++){
+					geometry = new THREE.BoxGeometry( 1, 1, 1 );
+					material = new THREE.MeshLambertMaterial( { color: 0xf2e805, wireframe: false } );
+					
+					var n = Math.floor(6*Math.random());
+					material = new THREE.MeshLambertMaterial( { map: dp_textures[n]});
+
+					cube2 = new THREE.Mesh( geometry, material );
+					cube2.position.x = (-28)*Math.random()+14;
+					cube2.position.y = (-20)*Math.random()+10;
+					cube2.position.z = (-50)*Math.random()-50;
+					scene.add( cube2 );
+					cubes2.push(cube2);	
+				}
+					
+/*
+				
+			num_cubes3 = 750;
+			
+				var cubes3 = [];
+				for(var i=0; i<num_cubes3; i++){
+					geometry = new THREE.BoxGeometry( 1, 1, 1 );
+					material = new THREE.MeshLambertMaterial( { color: 0xec6e05, wireframe: false } );
+					
+					var n = Math.floor(6*Math.random());
+					material = new THREE.MeshLambertMaterial( { map: dp_textures[n]});
+
+					cube3 = new THREE.Mesh( geometry, material );
+					cube3.position.x = (-28)*Math.random()+14;
+					cube3.position.y = (-20)*Math.random()+10;
+					cube3.position.z = (-50)*Math.random()-100;
+					scene.add( cube3 );
+					cubes3.push(cube3);	
+				}
+	*/			
+
+
+
+
+			// make a player cube
+			var player_geometry, player_material, player_cube;
+			player_geometry = new THREE.BoxGeometry( .5, .5, .5 );	
+			player_material = new THREE.MeshLambertMaterial( { color: 0xf913cc, wireframe: false } );
+
+			player_cube = new THREE.Mesh( player_geometry, player_material);
+			player_cube.position.z = 5;
+			scene.add( player_cube );
+			player_cube.rotation.x += .2;
+			player_cube.rotation.y -= .2;
+
+
+
+			// add lighting
+			var pointLight = new THREE.PointLight(0xffffff);
+			pointLight.position.set(0, 300, 200);
+ 			scene.add(pointLight);
+
+
+ 			// intersection tesing for cubes
+			var cubeIntersection = function(player_cube, cube2){
+				var min_x1 = cube2.position.x-.5;
+				var max_x1 = cube2.position.x+.5;
+				var min_y1 = cube2.position.y-.5;
+				var max_y1 = cube2.position.y+.5;
+				var min_z1 = cube2.position.z-.5;
+				var max_z1 = cube2.position.z+.5;
+
+				var min_x2 = player_cube.position.x-.25;
+				var max_x2 = player_cube.position.x+.25;
+				var min_y2 = player_cube.position.y-.25;
+				var max_y2 = player_cube.position.y+.25;
+				var min_z2 = player_cube.position.z-.25;
+				var max_z2 = player_cube.position.z+.25;
+
+				if(((min_x1 <= min_x2 && min_x2 <= max_x1) || (min_x2 <= min_x1 && min_x1 <= max_x2)) &&
+					((min_y1 <= min_y2 && min_y2 <= max_y1) || (min_y2 <= min_y1 && min_y1 <= max_y2)) &&
+					((min_z1 <= min_z2 && min_z2 <= max_z1) || (min_z2 <= min_z1 && min_z1 <= max_z2))){
+					//console.log("hit");
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+
+			
+
+			var id;
+			var render = function () {
+				id = requestAnimationFrame( render );
+				renderer.render(scene, camera);
+			
+				player_cube.position.z-=.15;
+				camera.position.z-=.15;
+
+				for(i=0; i<cubes1.length; i++){
+					if(cubeIntersection(player_cube, cubes1[i])){
+						cancelAnimationFrame( id );
+						
+					}
+				}
+
+				for(i=0; i<cubes2.length; i++){
+					if(cubeIntersection(player_cube, cubes2[i])){
+						cancelAnimationFrame( id );
+						
+					}
+				}
+
+
+/*
+				for(i=0; i<cubes1.length; i++){
+					cubes1[i].rotation.x += 0.01;
+					cubes1[i].rotation.y += 0.01;
+					cubes1[i].rotation.z += 0.01;
+				}
+
+				for(i=0; i<cubes2.length; i++){
+					cubes2[i].rotation.x += 0.01;
+					cubes2[i].rotation.y += 0.01;
+					cubes2[i].rotation.z += 0.01;
+				}
+*/
+
+
+				/******* Key Controls!! ********/
+				if(keyboard.pressed("w")) {
+					player_cube.position.y+=.1;
+					camera.position.y+=.1;
+				} 
+				else if(keyboard.pressed("s")){
+					player_cube.position.y-=.1;
+					camera.position.y-=.1;
+				}
+				else if(keyboard.pressed("a")){
+					player_cube.position.x-=.1;
+					camera.position.x-=.1;
+				}
+				else if(keyboard.pressed("d")){
+					player_cube.position.x+=.1;
+					camera.position.x+=.1;
+				}
+				
+			};
+			render();
+
+		</script>
+	</body>
+</html>

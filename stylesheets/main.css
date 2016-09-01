@@ -1,41 +1,141 @@
-html {
-  background: url(../space.jpeg) no-repeat center center fixed; 
+html body {
+  background: url(../img/space.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Fira Sans', Helveica, Arial, sans-serif;
+  font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
 
-body {
-  font-family: 'Fira Sans', Helveica, Arial, sans-serif;
-  font-size: 10pt;
-}
-
-.teaser-box {
-    /*display: box;
-    box-pack: center;
-    box-align: center;*/
-    width: 80%;
-    max-width: 400px;
-
-    background-color: black;
-    color: white;
-    box-shadow: -30px 30px gray;
-    border: 3px solid white;
-    margin: 5% auto;
-    padding: 20px;
-
-    align-content: center;
-    text-align: center;
+.page-container {
+  padding: 2%;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  /*font-family: 'Monofett', monospace;*/
+  /*font-weight: 400;*/
+  text-align: center;
+  font-size: 24pt;
+  color: white;
 }
 
-a {
-    color: white;
+/* windows */
+
+.window {
+  /*width: 80%;*/
+  /*max-width: 400px;*/
+
+  background-color: white;
+  color: black;
+  box-shadow: 3px 3px slategray;
+  border: 2px solid black;
+  /*margin: 5% auto;*/
+  /*border-radius: 5px;*/
+  padding: 0;
+  margin-bottom: 30px;
+  min-height: 280px;
+}
+
+.window-content {
+  border-top: 2px solid black;
+  padding: 30px;
+}
+
+/* window toolbar */
+
+.toolbar {
+  /*padding: 8px;*/
+  background-color: lightgray;
+  font-size: 9pt;
+  /*height: 25px;*/
+  line-height: 25px;
+  text-align: center;
+}
+
+.hider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 1px;
+  height: 15px;
+  width: 15px;
+  background-color: gray;
+  /*margin: 5px;*/
+  /*padding: 3px;*/
+}
+
+/* inputs */
+
+.btn-default {
+  border-radius: 0;
+  border: 2px solid black;
+  box-shadow: 2px 2px slategray;
+  margin: 5px;
+}
+
+.btn-primary {
+  border-radius: 0;
+  background-color: #C1C2C5;
+  color: black;
+  /*border: 0;*/
+}
+
+.hider {
+  outline: 1px solid black;
+  border: 1px solid white;
+  border-radius: 1px;
+  background-color: gray;
+}
+
+.hider:active {
+  background-color: #586e75;
+}
+
+.input-group-addon {
+  border-radius: 0px;
+  background-color: white;
+}
+
+.input-group {
+  border: 1px solid black;
+}
+
+.form-control {
+  border-radius: 0;
+  /*border: 1px solid gray;*/
+  /*height: 50px;*/
+}
+
+/*menu bar*/
+
+.menu-bar {
+  height: 20px;
+  color: black;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 10px;
+}
+
+.launcher-icon {
+  text-align: center;
+  align-content: center;
+  background-color: white;
+  border: 0;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-iframe {
+  display: none;
+  height: 200px;
+}
+
+iframe { 
+  display: block;
 }

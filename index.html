@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <title>Uncommon Hacks 2017</title>
+  <title>Uncommon Hacks</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!--TODO: favicon-->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
- <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet"> 
-   <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
+  <!--<link rel="icon" type="image/png" href="assets/images/favicon.png">-->
+
+  <!--fonts-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Monofett" rel="stylesheet"> -->
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/chicagoflf" type="text/css"/> 
+  <script src="https://use.fontawesome.com/d37b143e0c.js"></script>
+
+    <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
 
   <!-- Bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -23,51 +27,105 @@
 </head>
 
 <body>
-  <div class="teaser-box" id="draggable">
-    <h1>uncommon</h1>
-    <br>
-    <p>Uncommon Hacks</p>
-    <!--Is this the right date?-->
-    <p>Winter 2017</p>
-    <p>Chicago, IL</p>
-    <br>
-    <!--TODO: decide what we want to say here, maybe a few sentences about UH-->
-    <p>Sign up below to receive more information</p>
-    
-    
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup{background:#000; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-      <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll" class="input-group">
-          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
-          <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
-          <!--<div class="clear">-->
-          <!--</div>-->
-          <span class="input-group-btn">
-            <button type="submit button" class="btn btn-default" id="mc-embedded-subscribe">Subscribe</button>
-            <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
-          </span>
-        </div>
-      </form>
-    </div>
-    <!--End mc_embed_signup-->
+  <!--menu bar-->
+  <div class="menu-bar">
+    root@uncommon
+  </div>
 
-    
-    
-    
-    <br>
-    <p><a href="mailto:uncommonhacks17@gmail.com">Contact</a> | <a href="mailto:uncommonhacks17@gmail.com">Sponsorship</a></p>
-    <p><a href="http://2016.uncommonhacks.com">2016</a>
+        <div>
+        <h1>uncommon hacks</h1>
+      </div>
+  
+  <div class="page-container">
+    <div class="container-fluid">
+
+
+
+      <div class="row">
+        <!--INTRO WINDOW-->
+        <div class="window col-sm-5 col-sm-offset-1">
+          <div class="toolbar">
+            <div class="hider"></div>
+            About Uncommon Hacks
+          </div>
+          <div class="window-content">
+            <p>Winter 2017<br>
+            Chicago, IL</p>
+            <br>
+            <!--TODO: decide what we want to say here, maybe a few sentences about UH-->
+            <p>Sign up for more informaton!</p>
+            
+            <!-- Begin MailChimp Signup Form -->
+            <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
+            <div>
+              <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <span class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
+                  <!--<div class="clear">-->
+                  <!--</div>-->
+                  <span class="input-group-btn">
+                    <button type="submit button" class="btn btn-primary" id="mc-embedded-subscribe">Subscribe</button>
+                    <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
+                  </span>
+                </span>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->  
+            <br>
+            <p><a href="mailto:hello@uncommonhacks.com">Contact</a> | <a href="mailto:sponsorship@uncommonhacks.com">Sponsorship</a>  |  <a href="https://2016.uncommonhacks.com" target="_blank">2016</a></p>
+          </div>
+        </div>
+
+
+        <!--LAUNCHER WINDOW-->
+        <!--<div class="window col-sm-4 col-sm-offset-1" id="launcher-window">
+          <div class="toolbar">
+            <button class="hider"></button>
+            Home
+          </div>
+          <div class="window-content">
+            <button class="launcher-icon" id="video-launcher" onclick="showDiv('video-window')">
+              <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i><br>
+              2016 Video
+            </button>
+            <button class="launcher-icon hidden-xs" id="game-launcher" onclick="showDiv('game-window')">
+              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+              Game
+            </button>
+          </div>
+        </div>-->
+      </div>
+
+      <div class="row">
+        <!--VIDEO WINDOW-->
+        <div class="window col-sm-6 col-sm-offset-5" id="video-window">
+          <div class="toolbar">
+            <div class="hider"></div>
+            2016 Video
+          </div>
+          <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/Z7QOpvfNBNc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!--GAME WINDOW-->
+        <!--<div class="window col-sm-4 col-sm-offset-2 hidden-xs hidden" id="game-window">
+          <div class="toolbar">
+            <button class="hider"></button>
+            Game
+          </div>
+          <div class="window-content">
+            <input type="button" id="start-game" class="btn btn-default" value="Start"/>
+            Controls: <em>wasd</em>
+          </div>
+          <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="100%" width="100%"></iframe>
+        </div> -->
+      </div>
+
+    </div>
   </div>
 
   <!-- Bootstrap js -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
