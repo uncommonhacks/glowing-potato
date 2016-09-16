@@ -37,6 +37,11 @@ h1 {
   min-height: 280px;
 }
 
+#trail-window {
+  width: 560px;
+  height: 384px;
+}
+
 .window-content {
   border-top: 2px solid black;
   padding: 30px;
@@ -134,7 +139,7 @@ h1 {
   border: 0;
   margin: 10px;
   position: absolute;
-
+  right: 50px;
 }
 
 

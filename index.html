@@ -48,7 +48,7 @@
 
       <div class="row">
         <!--INTRO WINDOW-->
-        <div class="window col-sm-5 col-sm-offset-6">
+        <div class="window col-sm-5 col-sm-offset-1">
           <div class="toolbar">
             <div class="hider"></div>
             About Uncommon Hacks
@@ -87,7 +87,7 @@
 
 
 
-      <div class="row">
+      <!--<div class="row">-->
         <!--VIDEO WINDOW-->
         <div class="window col-sm-6 col-sm-offset-1" id="video-window">
           <div class="toolbar">
@@ -109,13 +109,16 @@
               <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
               Cubes
             </div>
-
+            <div class="launcher-icon hidden-xs" data-launches="trail-window">
+              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+              Oregon Trail
+            </div>
           </div>
         </div>
-      </div>
+      <!--</div>-->
 
         <!--CUBE WINDOW-->
-        <div class="window col-sm-4 col-sm-offset-2 hidden-xs hidden" id="cube-window">
+        <div class="window col-sm-5 col-sm-offset-2 hidden-xs hidden" id="cube-window">
           <div class="toolbar">
             <button class="hider"></button>
             Cubes
@@ -127,6 +130,15 @@
           <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="100%" width="100%"></iframe>
         </div> 
       </div>
+
+      <!--OREGON TRAIL-->
+        <div class="window col-sm-4 col-sm-offset-1 hidden-xs hidden" id="trail-window">
+          <div class="toolbar">
+            <div class="hider"></div>
+            Oregon Trail
+          </div>
+          <iframe src="https://archive.org/embed/msdos_Oregon_Trail_The_1990" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </div>
 
     </div>
   </div>
