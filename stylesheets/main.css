@@ -127,6 +127,17 @@ h1 {
   margin: 10px;
 }
 
+.desktop-icon {
+  text-align: center;
+  align-content: center;
+  color: white;
+  border: 0;
+  margin: 10px;
+  position: absolute;
+
+}
+
+
 .hidden {
   display: none;
 }

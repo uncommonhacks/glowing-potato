@@ -32,18 +32,23 @@
     root@uncommon
   </div>
 
-        <div>
-        <h1>uncommon hacks</h1>
-      </div>
-  
+  <div>
+    <h1>uncommon hacks</h1>
+  </div>
+
+
+
   <div class="page-container">
     <div class="container-fluid">
-
-
+      
+      <div class="desktop-icon hidden-xs" id="games-desktop-icon" data-launches="games-window">
+        <i class="fa fa-gamepad fa-4x" aria-hidden="true" id="games-desktop-icon"></i><br>
+        Games
+      </div>
 
       <div class="row">
         <!--INTRO WINDOW-->
-        <div class="window col-sm-5 col-sm-offset-1">
+        <div class="window col-sm-5 col-sm-offset-6">
           <div class="toolbar">
             <div class="hider"></div>
             About Uncommon Hacks
@@ -80,28 +85,11 @@
         </div>
 
 
-        <!--LAUNCHER WINDOW-->
-        <!--<div class="window col-sm-4 col-sm-offset-1" id="launcher-window">
-          <div class="toolbar">
-            <button class="hider"></button>
-            Home
-          </div>
-          <div class="window-content">
-            <button class="launcher-icon" id="video-launcher" onclick="showDiv('video-window')">
-              <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i><br>
-              2016 Video
-            </button>
-            <button class="launcher-icon hidden-xs" id="game-launcher" onclick="showDiv('game-window')">
-              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
-              Game
-            </button>
-          </div>
-        </div>-->
-      </div>
+
 
       <div class="row">
         <!--VIDEO WINDOW-->
-        <div class="window col-sm-6 col-sm-offset-5" id="video-window">
+        <div class="window col-sm-6 col-sm-offset-1" id="video-window">
           <div class="toolbar">
             <div class="hider"></div>
             2016 Video
@@ -109,18 +97,35 @@
           <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/Z7QOpvfNBNc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <!--GAME WINDOW-->
-        <!--<div class="window col-sm-4 col-sm-offset-2 hidden-xs hidden" id="game-window">
+        <!--GAMES WINDOW-->
+        <div class="window col-sm-4 col-sm-offset-1 hidden" id="games-window">
           <div class="toolbar">
             <button class="hider"></button>
-            Game
+            Games
+          </div>
+          <div class="window-content">
+
+            <div class="launcher-icon hidden-xs" data-launches="cube-window">
+              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+              Cubes
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+        <!--CUBE WINDOW-->
+        <div class="window col-sm-4 col-sm-offset-2 hidden-xs hidden" id="cube-window">
+          <div class="toolbar">
+            <button class="hider"></button>
+            Cubes
           </div>
           <div class="window-content">
             <input type="button" id="start-game" class="btn btn-default" value="Start"/>
             Controls: <em>wasd</em>
           </div>
           <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="100%" width="100%"></iframe>
-        </div> -->
+        </div> 
       </div>
 
     </div>

@@ -8,9 +8,20 @@ $( function() {
 
   // class hider button hides parent div
   $(".hider").click(function(){
-    $(this).parent('.toolbar').parent('.window').hide()
+    $(this).parent('.toolbar').parent('.window').hide();
   }); 
 
+  $(".launcher-icon").click(function(){
+    var launches = $(this).data("launches"); 
+    $("#"+launches).removeClass('hidden');
+    $("#"+launches).show();
+  }); 
+
+  $(".desktop-icon").click(function(){
+    var launches = $(this).data("launches"); 
+    $("#"+launches).removeClass('hidden');
+    $("#"+launches).show();
+  }); 
 
   $("#start-game").on('click touch', function(){
     document.getElementById("start-game").value = "Restart";
