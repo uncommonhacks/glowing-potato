@@ -23,9 +23,7 @@ h1 {
 /* windows */
 
 .window {
-  /*width: 80%;*/
-  /*max-width: 400px;*/
-
+  position: absolute;
   background-color: white;
   color: black;
   box-shadow: 3px 3px slategray;
@@ -33,13 +31,34 @@ h1 {
   /*margin: 5% auto;*/
   /*border-radius: 5px;*/
   padding: 0;
-  margin-bottom: 30px;
   min-height: 280px;
+}
+
+#intro-window {
+  left: 60px;
+}
+
+
+#video-window {
+  bottom: 0;
+  right: 30px;
+}
+
+#games-window {
+  right: 30px;
+}
+
+#cube-window {
+  bottom: 80px;
+  right: 50px;
+  height: 400px;
 }
 
 #trail-window {
   width: 560px;
   height: 384px;
+  bottom: 30px;
+  left: 50px;
 }
 
 .window-content {
@@ -135,11 +154,12 @@ h1 {
 .desktop-icon {
   text-align: center;
   align-content: center;
+  width: 20px;
   color: white;
   border: 0;
-  margin: 10px;
+  margin: 30px;
   position: absolute;
-  right: 50px;
+  left: 35px;
 }
 
 
