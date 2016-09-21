@@ -20,54 +20,79 @@ h1 {
   color: white;
 }
 
-/* windows */
+/* ~~~ windows ~~~ */
 
 .window {
-  position: absolute;
   background-color: white;
   color: black;
   box-shadow: 3px 3px slategray;
   border: 2px solid black;
-  /*margin: 5% auto;*/
-  /*border-radius: 5px;*/
   padding: 0;
-  min-height: 270px;
-}
-
-#intro-window {
-  top: 100px;
-  left: 60px;
-}
-
-
-#video-window {
-  bottom: 0;
-  right: 30px;
-}
-
-#games-window {
-  top: 120px;
-  right: 30px;
-}
-
-#cube-window {
-  bottom: 80px;
-  right: 50px;
-}
-
-#trail-window {
-  width: 560px;
-  height: 384px;
-  bottom: 30px;
-  left: 50px;
 }
 
 .window-content {
   border-top: 2px solid black;
-  padding: 30px;
 }
 
-/* window toolbar */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .window {
+    width: 97%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .window-content {
+    border-top: 2px solid black;
+    padding: 15px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media not screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .window {
+    position: absolute;
+    min-width: 400px;
+    min-height: 270px;
+  }
+
+  .window-content {
+    border-top: 2px solid black;
+    padding: 30px;
+  }
+
+  #intro-window {
+    top: 100px;
+    left: 160px;
+  }
+
+
+  #video-window {
+    bottom: 0;
+    right: 30px;
+    width: 500px;
+  }
+
+  #games-window {
+    top: 120px;
+    right: 30px;
+  }
+
+  #cube-window {
+    bottom: 80px;
+    right: 50px;
+  }
+
+  #trail-window {
+    width: 560px;
+    height: 384px;
+    bottom: 30px;
+    left: 50px;
+  }
+}
+
+
+/* ~~ window toolbar ~~ */
 
 .toolbar {
   /*padding: 8px;*/
@@ -132,7 +157,7 @@ h1 {
   /*height: 50px;*/
 }
 
-/*menu bar*/
+/*~~~ menu bar ~~~*/
 
 .menu-bar {
   height: 20px;
@@ -143,6 +168,8 @@ h1 {
   border-top-right-radius: 10px;
   padding-left: 10px;
 }
+
+/*~~~ launcher/desktop icons ~~~*/
 
 .launcher-icon {
   text-align: center;
