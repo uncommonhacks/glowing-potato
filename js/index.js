@@ -11,7 +11,7 @@ $( function() {
     handle: ".toolbar",
     stack: ".window",
     distance: 0,
-    // containment: "window" // doesn't work with intro window
+    containment: "window"
   });
 
 
