@@ -22,13 +22,16 @@ $( function() {
 
   $(".launcher-icon").click(function(){
     var launches = $(this).data("launches"); 
+    if (launches === 'trail-window') {
+      showTrail();
+    }
     $("#"+launches).removeClass('hidden');
     $("#"+launches).css('z-index', 200);
     $("#"+launches).show();
   }); 
 
   $(".desktop-icon").click(function(){
-    var launches = $(this).data("launches"); 
+    var launches = $(this).data("launches");
     $("#"+launches).removeClass('hidden');
     $("#"+launches).css('z-index', 200);
     $("#"+launches).show();
@@ -40,7 +43,7 @@ $( function() {
     iframe.attr("src", iframe.data("src"));
     iframe.show();
     document.getElementById("game-iframe").focus();
-});
+  });
 });
 
 function hideDiv(divId) {
@@ -49,4 +52,11 @@ function hideDiv(divId) {
 
 function showDiv(divId) {
   $("#"+divId).show();
+}
+
+function showTrail() {
+  var iframe = $("#trail-iframe");
+  iframe.attr("src", iframe.data("src"));
+  iframe.show();
+  document.getElementById("trail-iframe").focus();
 }

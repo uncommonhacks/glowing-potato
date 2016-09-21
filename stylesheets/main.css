@@ -35,7 +35,7 @@ h1 {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 767px) {
   .window {
     width: 97%;
     position: relative;
@@ -46,10 +46,14 @@ h1 {
     border-top: 2px solid black;
     padding: 15px;
   }
+
+  .hidden-phone {
+    display: none;
+  }
 }
 
 /* Desktops and laptops ----------- */
-@media not screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 768px) {
   .window {
     position: absolute;
     min-width: 400px;
@@ -68,7 +72,7 @@ h1 {
 
 
   #video-window {
-    bottom: 0;
+    bottom: 30px;
     right: 30px;
     width: 500px;
   }

@@ -15,7 +15,7 @@
     <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
 
   <!-- Bootstrap css -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/bootstrap/css/bootstrap.min.css">
   
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -38,15 +38,15 @@
     <h1>uncommon hacks</h1>
   </div>
 
-  <div class="desktop-icon hidden-xs" id="games-desktop-icon" data-launches="intro-window">
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="intro-window">
         <i class="fa fa-info-circle fa-4x" aria-hidden="true" id="intro-desktop-icon"></i><br>
         About
   </div>
-  <div class="desktop-icon hidden-xs" id="games-desktop-icon" data-launches="games-window">
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="games-window">
     <i class="fa fa-gamepad fa-4x" aria-hidden="true" id="games-desktop-icon"></i><br>
     Games
   </div>
-  <div class="desktop-icon hidden-xs" id="games-desktop-icon" data-launches="video-window">
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="video-window">
         <i class="fa fa-video-camera fa-4x" aria-hidden="true" id="intro-desktop-icon"></i><br>
         Video
   </div>
@@ -74,18 +74,18 @@
             <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
             <div>
               <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <span class="input-group">
+                <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                   <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></div>
                   <!--<div class="clear">-->
                   <!--</div>-->
-                  <span class="input-group-btn">
+                  <div class="input-group-btn">
                     <button type="submit button" class="btn btn-primary" id="mc-embedded-subscribe">Subscribe</button>
                     <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
-                  </span>
-                </span>
+                  </div>
+                </div>
               </form>
             </div>
             <!--End mc_embed_signup-->  
@@ -115,11 +115,11 @@
           </div>
           <div class="window-content">
 
-            <div class="launcher-icon hidden-xs" data-launches="cube-window">
+            <div class="launcher-icon hidden-phone" data-launches="cube-window">
               <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
               Cubes
             </div>
-            <div class="launcher-icon hidden-xs" data-launches="trail-window">
+            <div class="launcher-icon hidden-phone" data-launches="trail-window">
               <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
               Oregon Trail
             </div>
@@ -128,7 +128,7 @@
       <!--</div>-->
 
         <!--CUBE WINDOW-->
-        <div class="window hidden-xs hidden" id="cube-window">
+        <div class="window hidden-phone hidden" id="cube-window">
           <div class="toolbar">
             <button class="hider"></button>
             Cubes
@@ -140,17 +140,14 @@
       </div>
 
       <!--OREGON TRAIL-->
-        <div class="window hidden-xs hidden" id="trail-window">
+        <div class="window hidden-phone hidden" id="trail-window">
           <div class="toolbar">
             <div class="hider"></div>
             Oregon Trail
           </div>
-          <iframe src="https://archive.org/embed/msdos_Oregon_Trail_The_1990" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+          <iframe id="trail-iframe" data-src="https://archive.org/embed/msdos_Oregon_Trail_The_1990" src="about:blank" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
         </div>
 
     </div>
   </div>
-
-  <!-- Bootstrap js -->
-  <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 </body>
