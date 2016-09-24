@@ -1,24 +1,49 @@
 $( function() {
-  // class window is draggable
+
+  $(document).ready(function() {
+    // bring intro window to front
+    $('#intro-window').css('z-index', 100);
+  });
+  
+
   $(".window").draggable({ 
+    // class window is draggable
     handle: ".toolbar",
     stack: ".window",
-    // containment: ".page-container"
-   });
+    distance: 0,
+    containment: "window"
+  });
+
 
   // class hider button hides parent div
   $(".hider").click(function(){
-    $(this).parent('.toolbar').parent('.window').hide()
+    $(this).parent('.toolbar').parent('.window').hide();
   }); 
 
+  $(".launcher-icon").click(function(){
+    var launches = $(this).data("launches"); 
+    if (launches === 'trail-window') {
+      showTrail();
+    }
+    $("#"+launches).removeClass('hidden');
+    $("#"+launches).css('z-index', 200);
+    $("#"+launches).show();
+  }); 
+
+  $(".desktop-icon").click(function(){
+    var launches = $(this).data("launches");
+    $("#"+launches).removeClass('hidden');
+    $("#"+launches).css('z-index', 200);
+    $("#"+launches).show();
+  }); 
 
   $("#start-game").on('click touch', function(){
     document.getElementById("start-game").value = "Restart";
     var iframe = $("#game-iframe");
-    iframe.attr("src", iframe.data("src")); 
+    iframe.attr("src", iframe.data("src"));
     iframe.show();
     document.getElementById("game-iframe").focus();
-});
+  });
 });
 
 function hideDiv(divId) {
@@ -27,4 +52,11 @@ function hideDiv(divId) {
 
 function showDiv(divId) {
   $("#"+divId).show();
+}
+
+function showTrail() {
+  var iframe = $("#trail-iframe");
+  iframe.attr("src", iframe.data("src"));
+  iframe.show();
+  document.getElementById("trail-iframe").focus();
 }

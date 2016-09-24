@@ -20,29 +20,83 @@ h1 {
   color: white;
 }
 
-/* windows */
+/* ~~~ windows ~~~ */
 
 .window {
-  /*width: 80%;*/
-  /*max-width: 400px;*/
-
   background-color: white;
   color: black;
   box-shadow: 3px 3px slategray;
   border: 2px solid black;
-  /*margin: 5% auto;*/
-  /*border-radius: 5px;*/
   padding: 0;
-  margin-bottom: 30px;
-  min-height: 280px;
 }
 
 .window-content {
   border-top: 2px solid black;
-  padding: 30px;
 }
 
-/* window toolbar */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 767px) {
+  .window {
+    width: 97%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .window-content {
+    border-top: 2px solid black;
+    padding: 15px;
+  }
+
+  .hidden-phone {
+    display: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width : 768px) {
+  .window {
+    position: absolute;
+    min-width: 400px;
+    min-height: 270px;
+  }
+
+  .window-content {
+    border-top: 2px solid black;
+    padding: 30px;
+  }
+
+  #intro-window {
+    top: 100px;
+    left: 160px;
+  }
+
+
+  #video-window {
+    bottom: 30px;
+    right: 30px;
+    width: 500px;
+  }
+
+  #games-window {
+    top: 120px;
+    right: 30px;
+  }
+
+  #cube-window {
+    bottom: 80px;
+    right: 50px;
+  }
+
+  #trail-window {
+    width: 560px;
+    height: 384px;
+    bottom: 30px;
+    left: 50px;
+  }
+}
+
+
+/* ~~ window toolbar ~~ */
 
 .toolbar {
   /*padding: 8px;*/
@@ -107,7 +161,7 @@ h1 {
   /*height: 50px;*/
 }
 
-/*menu bar*/
+/*~~~ menu bar ~~~*/
 
 .menu-bar {
   height: 20px;
@@ -119,6 +173,8 @@ h1 {
   padding-left: 10px;
 }
 
+/*~~~ launcher/desktop icons ~~~*/
+
 .launcher-icon {
   text-align: center;
   align-content: center;
@@ -126,6 +182,18 @@ h1 {
   border: 0;
   margin: 10px;
 }
+
+.desktop-icon {
+  text-align: center;
+  align-content: center;
+  width: 20px;
+  color: white;
+  border: 0;
+  margin: 30px;
+  /*position: absolute;*/
+  left: 35px;
+}
+
 
 .hidden {
   display: none;

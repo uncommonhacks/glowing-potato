@@ -15,12 +15,14 @@
     <!--<link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">-->
 
   <!-- Bootstrap css -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/bootstrap/css/bootstrap.min.css">
   
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+
 
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
   <script src="js/index.js"></script>
@@ -32,18 +34,31 @@
     root@uncommon
   </div>
 
-        <div>
-        <h1>uncommon hacks</h1>
-      </div>
-  
+  <div>
+    <h1>uncommon hacks</h1>
+  </div>
+
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="intro-window">
+        <i class="fa fa-info-circle fa-4x" aria-hidden="true" id="intro-desktop-icon"></i><br>
+        About
+  </div>
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="games-window">
+    <i class="fa fa-gamepad fa-4x" aria-hidden="true" id="games-desktop-icon"></i><br>
+    Games
+  </div>
+  <div class="desktop-icon hidden-phone" id="games-desktop-icon" data-launches="video-window">
+        <i class="fa fa-video-camera fa-4x" aria-hidden="true" id="intro-desktop-icon"></i><br>
+        Video
+  </div>
+
+
   <div class="page-container">
     <div class="container-fluid">
-
-
+      
 
       <div class="row">
         <!--INTRO WINDOW-->
-        <div class="window col-sm-5 col-sm-offset-1">
+        <div class="window" id="intro-window">
           <div class="toolbar">
             <div class="hider"></div>
             About Uncommon Hacks
@@ -59,73 +74,80 @@
             <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
             <div>
               <form action="//uncommonhacks.us13.list-manage.com/subscribe/post?u=6014b43bb217b62cde96742c8&amp;id=8aed64c159" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <span class="input-group">
+                <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                   <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="you@example.com" required aria-describedby="basic-addon1">
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <span style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></span>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6014b43bb217b62cde96742c8_8aed64c159" tabindex="-1" value=""></div>
                   <!--<div class="clear">-->
                   <!--</div>-->
-                  <span class="input-group-btn">
+                  <div class="input-group-btn">
                     <button type="submit button" class="btn btn-primary" id="mc-embedded-subscribe">Subscribe</button>
                     <!--<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">-->
-                  </span>
-                </span>
+                  </div>
+                </div>
               </form>
             </div>
             <!--End mc_embed_signup-->  
             <br>
-            <p><a href="mailto:hello@uncommonhacks.com">Contact</a> | <a href="mailto:sponsorship@uncommonhacks.com">Sponsorship</a>  |  <a href="https://2016.uncommonhacks.com" target="_blank">2016</a></p>
+            <p><a href="mailto:celery@uncommonhacks.com">Contact</a> | <a href="mailto:sponsorship@uncommonhacks.com">Sponsorship</a>  |  <a href="https://2016.uncommonhacks.com" target="_blank">2016</a></p>
           </div>
         </div>
 
 
-        <!--LAUNCHER WINDOW-->
-        <!--<div class="window col-sm-4 col-sm-offset-1" id="launcher-window">
-          <div class="toolbar">
-            <button class="hider"></button>
-            Home
-          </div>
-          <div class="window-content">
-            <button class="launcher-icon" id="video-launcher" onclick="showDiv('video-window')">
-              <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i><br>
-              2016 Video
-            </button>
-            <button class="launcher-icon hidden-xs" id="game-launcher" onclick="showDiv('game-window')">
-              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
-              Game
-            </button>
-          </div>
-        </div>-->
-      </div>
 
-      <div class="row">
+
+      <!--<div class="row">-->
         <!--VIDEO WINDOW-->
-        <div class="window col-sm-6 col-sm-offset-5" id="video-window">
+        <div class="window" id="video-window">
           <div class="toolbar">
             <div class="hider"></div>
             2016 Video
           </div>
-          <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/Z7QOpvfNBNc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/183702934?color=ff0179&byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
-        <!--GAME WINDOW-->
-        <!--<div class="window col-sm-4 col-sm-offset-2 hidden-xs hidden" id="game-window">
+        <!--GAMES WINDOW-->
+        <div class="window hidden" id="games-window">
           <div class="toolbar">
             <button class="hider"></button>
-            Game
+            Games
           </div>
           <div class="window-content">
+
+            <div class="launcher-icon hidden-phone" data-launches="cube-window">
+              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+              Cubes
+            </div>
+            <div class="launcher-icon hidden-phone" data-launches="trail-window">
+              <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i><br>
+              Oregon Trail
+            </div>
+          </div>
+        </div>
+      <!--</div>-->
+
+        <!--CUBE WINDOW-->
+        <div class="window hidden-phone hidden" id="cube-window">
+          <div class="toolbar">
+            <button class="hider"></button>
+            Cubes
+          </div>
             <input type="button" id="start-game" class="btn btn-default" value="Start"/>
             Controls: <em>wasd</em>
-          </div>
-          <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="100%" width="100%"></iframe>
-        </div> -->
+          <iframe id="game-iframe" data-src="gametest.html" src="about:blank" height="196" width="100%"></iframe>
+        </div> 
       </div>
+
+      <!--OREGON TRAIL-->
+        <div class="window hidden-phone hidden" id="trail-window">
+          <div class="toolbar">
+            <div class="hider"></div>
+            Oregon Trail
+          </div>
+          <iframe id="trail-iframe" data-src="https://archive.org/embed/msdos_Oregon_Trail_The_1990" src="about:blank" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </div>
 
     </div>
   </div>
-
-  <!-- Bootstrap js -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
