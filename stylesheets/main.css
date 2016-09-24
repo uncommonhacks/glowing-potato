@@ -1,9 +1,10 @@
 html body {
-  background: url(../img/space.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  /*background: url(../img/space.jpg) no-repeat center center fixed; */
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -o-background-size: cover;*/
+  /*background-size: cover;*/
+  background-color: black;
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
@@ -25,8 +26,9 @@ h1 {
 .window {
   background-color: white;
   color: black;
-  box-shadow: 3px 3px slategray;
+  /*box-shadow: 3px 3px gray;*/
   border: 2px solid black;
+  outline: 2px solid white;
   padding: 0;
 }
 
@@ -68,6 +70,7 @@ h1 {
   #intro-window {
     top: 100px;
     left: 160px;
+    width: 400px;
   }
 
 
