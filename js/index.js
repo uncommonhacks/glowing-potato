@@ -5,15 +5,15 @@ $( function() {
     $('#intro-window').css('z-index', 100);
   });
   
-
-  $(".window").draggable({ 
-    // class window is draggable
-    handle: ".toolbar",
-    stack: ".window",
-    distance: 0,
-    containment: "window"
-  });
-
+  if ($(window).width() >= 768) {
+    $(".window").draggable({ 
+      // class window is draggable
+      handle: ".toolbar",
+      stack: ".window",
+      distance: 0,
+      containment: "window"
+    });
+  }
 
   // class hider button hides parent div
   $(".hider").click(function(){
