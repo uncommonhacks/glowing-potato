@@ -3,6 +3,10 @@ $( function() {
   $(document).ready(function() {
     // bring intro window to front
     $('#intro-window').css('z-index', 100);
+    //TO BE USED FOR RANDOM BACKGROUND
+    //var colors = ["red", "blue", "green"]
+    //var num = Math.floor(Math.random() * 3);
+    //document.body.style.background = colors[num];
   });
   
   if ($(window).width() >= 768) {
@@ -60,3 +64,6 @@ function showTrail() {
   iframe.show();
   document.getElementById("trail-iframe").focus();
 }
+
+
+
