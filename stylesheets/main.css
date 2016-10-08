@@ -4,7 +4,7 @@ html body {
   -moz-background-size: cover;
   -o-background-size: cover;*/
   /*background-size: cover;*/
-  background-color: black;
+  background-color: #5e5e5e;
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
@@ -13,11 +13,16 @@ html body {
   padding: 2%;
 }
 
+@font-face {
+  font-family: "Beef'd";
+  src: url("/fonts/beefd/beefd.ttf");
+}
+
 h1 {
-  /*font-family: 'Monofett', monospace;*/
+  font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
   /*font-weight: 400;*/
   text-align: center;
-  font-size: 24pt;
+  font-size: 16pt;
   color: white;
 }
 
@@ -28,7 +33,7 @@ h1 {
   color: black;
   /*box-shadow: 3px 3px gray;*/
   border: 2px solid black;
-  outline: 2px solid white;
+  /*outline: 2px solid white;*/
   padding: 0;
 }
 
