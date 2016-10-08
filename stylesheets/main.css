@@ -4,7 +4,7 @@ html body {
   -moz-background-size: cover;
   -o-background-size: cover;*/
   /*background-size: cover;*/
-  background-color: #5e5e5e;
+  background-color: #5E5F5F;
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
@@ -23,6 +23,7 @@ h1 {
   /*font-weight: 400;*/
   text-align: center;
   font-size: 16pt;
+  line-height: 1.5;
   color: white;
 }
 
