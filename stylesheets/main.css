@@ -73,8 +73,6 @@ h1 {
   .window-content {
     border-top: 2px solid black;
     padding: 30px;
-    overflow: auto;
-    height: 100%;
   }
 
   #intro-window {
@@ -83,16 +81,10 @@ h1 {
     width: 400px;
   }
 
-  #words-window {
-    top: 140px;
-    left: 600px;
-    width: 400px;
-    height: 500px;
-  }
 
   #video-window {
     bottom: 30px;
-    left: 30px;
+    right: 30px;
     width: 500px;
   }
 
