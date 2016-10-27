@@ -1,10 +1,10 @@
 html body {
-  /*background: url(../img/space.jpg) no-repeat center center fixed; */
+  background: url(../img/Wallpaper-tile.png); 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;*/
   /*background-size: cover;*/
-  background-color: #5E5F5F;
+  /*background-color: #5E5F5F;*/
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
