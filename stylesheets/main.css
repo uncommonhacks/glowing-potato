@@ -138,6 +138,7 @@ h1 {
   line-height: 25px;
   text-align: center;
   cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .hider {
