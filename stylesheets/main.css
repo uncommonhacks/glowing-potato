@@ -27,6 +27,12 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 14pt;
+  margin-top: 0;
+}
+
+
 /* ~~~ windows ~~~ */
 
 .window {
