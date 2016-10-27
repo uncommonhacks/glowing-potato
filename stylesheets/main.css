@@ -90,39 +90,40 @@ h1 {
   }
 
   #intro-window {
-    top: 100px;
-    left: 160px;
+    top: 10%;
+    left: 10%;
     width: 400px;
   }
 
   #words-window {
-    top: 140px;
-    left: 600px;
+    top: 14%;
+    left: 55%;
+    right: 25%;
     width: 400px;
     height: 500px;
   }
 
   #video-window {
-    bottom: 30px;
-    left: 30px;
+    bottom: 10%;
+    left: 10%;
     width: 500px;
   }
 
   #games-window {
-    top: 120px;
-    right: 30px;
+    top: 20%;
+    right: 20%;
   }
 
   #cube-window {
-    bottom: 80px;
-    right: 50px;
+    bottom: 10%;
+    right: 10%;
   }
 
   #trail-window {
     /*width: 564px;*/
     /*height: 414px;*/
-    bottom: 30px;
-    left: 50px;
+    bottom: 13%;
+    left: 7%;
   }
 }
 
