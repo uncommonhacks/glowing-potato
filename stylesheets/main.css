@@ -32,8 +32,8 @@ h1 {
 .window {
   background-color: white;
   color: black;
-  /*box-shadow: 3px 3px gray;*/
-  border: 2px solid black;
+  box-shadow: 3px 3px #2a2a2a;
+  border: 1px solid gray;
   /*outline: 2px solid white;*/
   padding: 0;
 }
