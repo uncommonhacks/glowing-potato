@@ -213,6 +213,19 @@ h2 {
   padding-left: 10px;
 }
 
+/*~~~ bottom bar ~~~*/
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
+}
+
 /*~~~ launcher/desktop icons ~~~*/
 
 .launcher-icon {

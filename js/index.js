@@ -6,7 +6,7 @@ $( function() {
     //TO BE USED FOR RANDOM BACKGROUND
     //var colors = ["red", "blue", "green"]
     //var num = Math.floor(Math.random() * 3);
-    //document.body.style.background = colors[num];
+    /*document.body.style.background = "blue";*/
   });
   
   if ($(window).width() >= 768) {
