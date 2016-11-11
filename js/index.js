@@ -4,9 +4,9 @@ $( function() {
     // bring intro window to front
     $('#intro-window').css('z-index', 100);
     //TO BE USED FOR RANDOM BACKGROUND
-    var colors = ["#EC5958", "#8BCFB7", "#69BAE8", "#F06498", "#B357A1", "#C1A9D2", "#91B0DC"];
-    var num = Math.floor(Math.random() * 7);
-    document.body.style.background = colors[num];
+    //var colors = ["red", "blue", "green"]
+    //var num = Math.floor(Math.random() * 3);
+    //document.body.style.background = colors[num];
   });
   
   if ($(window).width() >= 768) {
