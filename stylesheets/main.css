@@ -1,10 +1,10 @@
 html body {
-  /*background: url(../img/space.jpg) no-repeat center center fixed; */
+  background: url(../img/Wallpaper-tile.png); 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;*/
   /*background-size: cover;*/
-  background-color: #5E5F5F;
+  /*background-color: #5E5F5F;*/
   font-family: ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 10pt;
 }
@@ -27,13 +27,19 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 14pt;
+  margin-top: 0;
+}
+
+
 /* ~~~ windows ~~~ */
 
 .window {
   background-color: white;
   color: black;
-  /*box-shadow: 3px 3px gray;*/
-  border: 2px solid black;
+  box-shadow: 3px 3px #2a2a2a;
+  border: 1px solid gray;
   /*outline: 2px solid white;*/
   padding: 0;
 }
@@ -57,6 +63,11 @@ h1 {
     padding: 15px;
   }
 
+  .window-content-scrollable {
+    border-top: 2px solid black;
+    padding: 15px;
+  }
+
   .hidden-phone {
     display: none;
   }
@@ -75,34 +86,55 @@ h1 {
     padding: 30px;
   }
 
+  .window-content-scrollable {
+    border-top: 2px solid black;
+    padding: 30px;
+    overflow: auto;
+    height: calc(100% - 25px);
+  }
+
   #intro-window {
-    top: 100px;
-    left: 160px;
+    top: 10%;
+    left: 10%;
     width: 400px;
   }
 
+<<<<<<< HEAD
 
   #video-window {
     bottom: 30px;
     right: 30px;
+=======
+  #words-window {
+    top: 14%;
+    left: 55%;
+    right: 25%;
+    width: 400px;
+    height: 500px;
+  }
+
+  #video-window {
+    bottom: 10%;
+    left: 10%;
+>>>>>>> develop
     width: 500px;
   }
 
   #games-window {
-    top: 120px;
-    right: 30px;
+    top: 20%;
+    right: 20%;
   }
 
   #cube-window {
-    bottom: 80px;
-    right: 50px;
+    bottom: 10%;
+    right: 10%;
   }
 
   #trail-window {
     /*width: 564px;*/
     /*height: 414px;*/
-    bottom: 30px;
-    left: 50px;
+    bottom: 13%;
+    left: 7%;
   }
 }
 
@@ -116,6 +148,8 @@ h1 {
   /*height: 25px;*/
   line-height: 25px;
   text-align: center;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .hider {
@@ -182,6 +216,19 @@ h1 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding-left: 10px;
+}
+
+/*~~~ bottom bar ~~~*/
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
 }
 
 /*~~~ launcher/desktop icons ~~~*/
