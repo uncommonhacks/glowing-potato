@@ -1,13 +1,13 @@
 $( function() {
 
-  $(document).ready(function() {
-    // bring intro window to front
-    $('#intro-window').css('z-index', 100);
-    //TO BE USED FOR RANDOM BACKGROUND
-    var colors = ["#EC5958", "#8BCFB7", "#69BAE8", "#F06498", "#B357A1", "#C1A9D2", "#91B0DC"];
-    var num = Math.floor(Math.random() * 7);
-    document.body.style.background = colors[num];
-  });
+  // bring intro window to front
+  $('#intro-window').css('z-index', 160);
+  $('#words-window').css('z-index', 100);
+  $('#sponsors-window').css('z-index', 150);
+  //TO BE USED FOR RANDOM BACKGROUND
+  var colors = ["#EC5958", "#8BCFB7", "#69BAE8", "#F06498", "#B357A1", "#C1A9D2", "#91B0DC"];
+  var num = Math.floor(Math.random() * 7);
+  document.body.style.background = colors[num];
   
   if ($(window).width() >= 768) {
     $(".window").draggable({ 
@@ -30,14 +30,14 @@ $( function() {
       showTrail();
     }
     $("#"+launches).removeClass('hidden');
-    $("#"+launches).css('z-index', 200);
+    $("#"+launches).css('z-index', 400);
     $("#"+launches).show();
   }); 
 
   $(".desktop-icon").click(function(){
     var launches = $(this).data("launches");
     $("#"+launches).removeClass('hidden');
-    $("#"+launches).css('z-index', 200);
+    $("#"+launches).css('z-index', 300);
     $("#"+launches).show();
   }); 
 
@@ -64,6 +64,5 @@ function showTrail() {
   iframe.show();
   document.getElementById("trail-iframe").focus();
 }
-
 
 

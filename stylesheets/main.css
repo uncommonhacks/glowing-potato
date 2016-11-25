@@ -22,7 +22,7 @@ h1 {
   font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
   /*font-weight: 400;*/
   text-align: center;
-  font-size: 16pt;
+  font-size: 18pt;
   line-height: 1.5;
   color: white;
 }
@@ -63,6 +63,10 @@ h2 {
     padding: 15px;
   }
 
+  #sponsors-window {
+    text-align: center;
+  }
+
   .window-content-scrollable {
     border-top: 2px solid black;
     padding: 15px;
@@ -77,7 +81,7 @@ h2 {
 @media only screen and (min-device-width : 768px) {
   .window {
     position: absolute;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 270px;
   }
 
@@ -99,19 +103,28 @@ h2 {
     top: 10%;
     left: 10%;
     width: 400px;
+    font-size: 11pt;
   }
 
   #words-window {
     top: 14%;
     left: 55%;
-    right: 25%;
+    right: 20%;
     width: 400px;
     height: 500px;
   }
 
+  #sponsors-window {
+    bottom: 5%;
+    left: 8%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
+
   #video-window {
-    bottom: 10%;
-    left: 10%;
+    bottom: 12%;
+    left: 18%;
     width: 500px;
   }
 
@@ -244,7 +257,7 @@ h2 {
   border: 0;
   margin: 30px;
   /*position: absolute;*/
-  left: 35px;
+  left: 40px;
 }
 
 
@@ -269,4 +282,8 @@ iframe {
   right:50px;top:0;
   width:10%;
   z-index:10000
+}
+
+.sponsor-logo {
+  margin: 15px;
 }
