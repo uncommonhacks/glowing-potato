@@ -1,9 +1,10 @@
 $( function() {
 
   // bring intro window to front
-  $('#intro-window').css('z-index', 160);
-  $('#words-window').css('z-index', 100);
+  $('#intro-window').css('z-index', 200);
+  $('#words-window').css('z-index', 190);
   $('#supporter-window').css('z-index', 150);
+  $('#partner-window').css('z-index', 140);
   //TO BE USED FOR RANDOM BACKGROUND
   var colors = ["#EC5958", "#8BCFB7", "#69BAE8", "#F06498", "#B357A1", "#C1A9D2", "#91B0DC"];
   var num = Math.floor(Math.random() * 7);
