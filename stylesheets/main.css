@@ -111,22 +111,29 @@ h2 {
 
   #words-window {
     top: 14%;
-    left: 55%;
+    left: 60%;
     /*right: 20%;*/
     width: 400px;
     height: 500px;
   }
 
   #supporter-window {
-    bottom: 5%;
-    left: 6%;
-    width: 250px;
+    bottom: 10%;
+    left: calc(60% - 420px);
+    width: 400px;
     height: 350px;
     text-align: center;
   }
+
+  #supporter-window .window-content-scrollable {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #partner-window {
-    bottom: 5%;
-    left: calc(6% + 320px);
+    bottom: 2%;
+    left: 8%;
     width: 250px;
     height: 280px;
     text-align: center;
@@ -295,5 +302,5 @@ iframe {
 }
 
 .supporter-logo {
-  margin: 15px;
+  margin: 10px;
 }
