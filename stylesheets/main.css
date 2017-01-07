@@ -139,10 +139,23 @@ h2 {
     text-align: center;
   }
 
+  #link-window {
+    bottom: 40%;
+    left: 8%;
+    width: 250px;
+    height: 280px;
+  }
+
   #video-window {
     bottom: 12%;
     left: calc(55% - 400px);
     width: 500px;
+  }
+
+  #address-window {
+    bottom: 12%;
+    left: 35%;
+    width: 250px;
   }
 
   #games-window {
@@ -304,3 +317,4 @@ iframe {
 .supporter-logo {
   margin: 10px;
 }
+
