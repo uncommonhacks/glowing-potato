@@ -127,9 +127,9 @@ h2 {
 
   #supporter-window {
     bottom: 10%;
-    left: calc(60% - 420px);
-    width: 400px;
-    height: 355px;
+    left: calc(62% - 420px);
+    width: 380px;
+    height: 350px;
     text-align: center;
   }
 
@@ -141,9 +141,9 @@ h2 {
 
   #partner-window {
     bottom: 2%;
-    left: 8%;
-    width: 250px;
-    height: 280px;
+    left: 7%;
+    width: 200px;
+    /*height: 220px;*/
     text-align: center;
   }
 
