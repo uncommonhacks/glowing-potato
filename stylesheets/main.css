@@ -172,6 +172,10 @@ h2 {
     top: 20%;
     right: 20%;
   }
+  #wifi-window {
+    bottom: 10%;
+    left: 15%;
+  }
 
   #cube-window {
     bottom: 10%;
